@@ -12,8 +12,8 @@ const Affirmations = () => {
         className="flex-1"
       >
         <ScrollView showsVerticalScrollIndicator={false} className="p-4">
-          <Text className="text-white text-3xl font-bold mt-6">
-            Change your beliefs with affirmations
+          <Text className="text-white text-3xl font-bold mt-10 mb-1">
+            Strengthen your belief
           </Text>
           <View>
             {AFFIRMATION_GALLERY.map((g) => (

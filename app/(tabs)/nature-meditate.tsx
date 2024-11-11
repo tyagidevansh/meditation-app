@@ -7,8 +7,6 @@ import MEDITATION_IMAGES from '@/constants/meditation-images';
 
 const NatureMeditate = () => {
   return (
-
-
     <View className='flex-1'>
       <LinearGradient
         className='flex-1'
