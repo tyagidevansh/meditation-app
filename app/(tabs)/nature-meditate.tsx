@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { StatusBar } from "expo-status-bar";
 import { MEDITATION_DATA } from '@/constants/meditation-data';
 import MEDITATION_IMAGES from '@/constants/meditation-images';
+import { router } from 'expo-router';
 
 const NatureMeditate = () => {
   return (
@@ -29,7 +30,7 @@ const NatureMeditate = () => {
             keyExtractor={(item) => item.id.toString()}
             renderItem={({item}) => (
               <Pressable
-                onPress={() => console.log("pressed")}
+                onPress={() => router.push(`/meditate/${item.id}`)}
                 className = "h-48 my-3 w-11/12 mx-auto rounded-md overflow-hidden"
               >
                 <ImageBackground
